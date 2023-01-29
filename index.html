@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="upload-btn" id="ULPbtn">
+        <input type="file" id="fileBtn" hidden accept="Image/*">
+        <img id="preView" src="./upload.png" alt="Upload-Btn" />
+        <p>Browse to Upload</p>
+      </div>
+      <div class="ser">
+        <table>
+          <tr>
+            <td>
+              <label>Width</label>
+            </td>
+            <td>
+              <label>Height</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="number" id="width" />
+            </td>
+            <td>
+              <input type="number" id="height" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <input id="aspect" type="checkbox" checked>
+                <label for="aspect">Lock aspect ratio</label>
+            </td>
+            <td>
+                <input id="quality" type="checkbox">
+                <label for="quality">Reduse Quality</label>
+            </td>
+          </tr>
+        </table>
+        <button id="download">Download Image</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+@import url("https://fonts.google.com/specimen/Ubuntu");
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #6f1ab6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.wrapper {
+  background-color: #fffbf5;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+}
+.wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.wrapper p {
+    padding-top: 5px;
+  color: #810ca8;
+}
+.upload-btn.active p {
+  display: none;
+}
+.ser {
+  display: none;
+}
+.upload-btn.active ~ .ser {
+  display: block;
+}
+.upload-btn {
+  width: 400px;
+  height: 235px;
+  cursor: pointer;
+  border: 2px dashed #d3a0fe;
+  /* padding: 1rem 5rem; */
+  text-align: center;
+}
+button {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #6f1ab6;
+  color: #fffbf5;
+  padding: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  margin-top: 1rem;
+}
+table {
+  margin: 1rem 0;
+}
+table tr td {
+  padding: 5px;
+}
+label {
+  cursor: pointer;
+}
+input[type="number"] {
+  border: 1px solid #810ca8;
+  outline: none;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}
